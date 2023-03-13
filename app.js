@@ -1,5 +1,4 @@
 const title = document.querySelector('h1')
-const nav = document.querySelector('nav')
 const btn = document.querySelectorAll('a')
 
 window.addEventListener('load', loader)
@@ -18,7 +17,7 @@ function loader () {
     .to('.flip-img1', { display: 'none', duration: 0 })
     .to('.f2', { y: '-100%', duration: 0.6 })
     .to('.load-container', { autoAlpha: 0, duration: 0.8, delay: 1 })
-    .from(nav, { autoAlpha: 0, y: -500, duration: 5, ease: 'power4', 
+    .from('.name', { autoAlpha: 0, y: -500, duration: 5, ease: 'power4', 
     }, '-=1')
     .from('.aboutme', {
       duration: 1.5,

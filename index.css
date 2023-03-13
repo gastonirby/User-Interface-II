@@ -51,7 +51,7 @@ body {
 	flex-direction: column;
 	overscroll-behavior: none;
 
-	background-image: url(Images/Flower.jpg);
+	background-image: url(assets/Images/Flower.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -76,7 +76,7 @@ header {
 	width: 100%;
 }
 
-nav{
+.name {
 	margin-top: 15%;
 	margin-bottom: 10%;
 	padding: 2% 4%;
@@ -178,7 +178,7 @@ footer {
 	padding: 5%;
 	width: 34%;
 	height: 100%;
-	background-image: url(Images/Flower.jpg);
+	background-image: url(assets/Images/Flower.jpg);
 	background-size: cover;
 }
 
@@ -256,10 +256,10 @@ body {
 }
 
 .flip-img1 {
-	background-image: url(Images/Cliffs.jpg);
+	background-image: url(assets/Images/Cliffs.jpg);
 }
 .flip-img2 {
-	background-image: url(Images/PortAngeles.jpg);
+	background-image: url(assets/Images/PortAngeles.jpg);
 }
 
 .flip {
