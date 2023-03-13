@@ -47,6 +47,15 @@ body {
     font-size:1.6rem;
     line-height:1.5;
     font-family: 'Open Sans', sans-serif;
+	display: flex;
+	flex-direction: column;
+	overscroll-behavior: none;
+
+	background-image: url(Images/Flower.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position:top;
 }
 
 *{
@@ -56,114 +65,86 @@ body {
     max-width:100%;
   /*put a border around everything to see where it stops and starts*/
     /* border:1px solid grey; */
-	/* background-color:#b1bfc8; */
 }
 
 /*main content*/
 
-.space1 {
-	height: 40vh;
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
 }
 
 nav{
-	border-radius: 40px;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	width:fit-content;
-	margin-left: 32%;
-	padding: 1.5%;
+	margin-top: 15%;
+	margin-bottom: 10%;
+	padding: 2% 4%;
+	border-radius:5px;
 	background-color:rgb(213,197,174, .3);
 }
 
 h1 {
-	font-size: 6rem;
-	font-family: 'Satisfy', cursive;
-	color:rgb(213,197,174,.7);
+	display: flex;
+	text-align: center;
+	color:rgb(213,197,174);
+	text-align: center;
 	letter-spacing: 3px;
-	/* margin-left: 80%; */
+	font-size: 120px;
+	text-transform: uppercase;
 }
 
-.about, .contact, .projects{
+/* .about, .contact, {
+	
 	padding:0.5%;
 	margin:1%;
 	text-align: center;
-	align-self: flex-start;
-	/* background-color:rgb(165,182,191,.5); */
-	color:rgb(213,197,174,.6);
+	color:rgb(213,197,174);
 	width: 60%;
 	letter-spacing:3px;
-	border-radius:10px;
-	transition: 1.6s;
-}
+} */
 
-.about:hover, .contact:hover, .projects:hover{
+.contact:hover{
 	background-color: rgb(213,197,174,.6);
 	color:rgb(100,104,109,1);
 }
 
-
-/* .intro{
-	text-align: center;
-	margin:auto;
-	background-color: rgb(165,182,191,.3);
-    color: #fff;
-	border-radius: 10px;
-	width:35%;
-	padding:1%;
-} */
-
-.mainimg{
-    background-image:url(Images/Flower.jpg);
-    background-size:cover;
-    background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position:top;
-	width: auto;
-}
-
-.space{
-	height:35vh;
-}
-
-
-/* .aboutme{
-	padding:1%;
+.aboutme {
+	padding:3%;
 	text-align: center;
 	background-color: rgb(213,197,174,.3);
     color: #fff;
-	border-radius: 10px;
-	width:70%;
+	font-size: 2.5rem;
+	width:60%;
 	margin:auto;
-} */
+	margin-bottom: 20%;
+	border-radius:3px;
+	visibility: hidden;
+}
 
-.images{
+/* .images{
 	display:flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
 	align-items: center;
 	width: 100%;
 	padding:2% 10%;
-}
+} */
 
-.img1, .img2, .img3, .img4, .img5, .img6{
+/* .img1, .img2, .img3, .img4, .img5, .img6{
 	width:30%;
 	padding: 1.5% 0;
-}
+} */
 
 .contactf {
-	display:flex;
-	justify-content: center;
 	padding:0.5% 1%;
-	margin:1%;
+	margin:2%;
 	text-align: center;
 	background-color:rgb(156,114,38, .3);
 	color:rgb(213,197,174,1);
-	text-decoration:none;
 	letter-spacing:3px;
-	border-radius:10px;
-	transition: 2s;
-	width:7%;
+	border-radius:3px;
+	font-size: 25px;
 }
 
 .contactf:hover{
@@ -171,13 +152,34 @@ h1 {
 	color:rgb(100,104,109,1);
 }
 
-footer{
+footer {
 	display:flex;
 	justify-content: center;
 	align-items: center;
-	padding:0.5%;
+	padding-top:0.5%;
 	width:100%;
 	background-color: rgb(156,114,38, .5);
+}
+
+.projects {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 100%;
+	height: 700px;
+	margin-bottom: 50%;
+	padding: 0 5%;
+}
+
+.box {
+	text-align: center;
+	margin-top: 10%;
+	margin: 5%;
+	padding: 5%;
+	width: 34%;
+	height: 100%;
+	background-image: url(Images/Flower.jpg);
+	background-size: cover;
 }
 
 /* image flip */
@@ -199,21 +201,23 @@ body {
   z-index: 100;
   width: 100%;
   height: 100%;
-  background: #e0b289;
+  background-color:rgb(213,197,174, 0.9);
   pointer-events: none;
+  display: flex;
 }
 
 .anim-bloc {
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 400px;
+  width: 900px;
   height: 400px;
   z-index: 100;
 }
-.bloc-txt {
+/* .bloc-txt {
   background: white;
+  background-color:rgb(213,197,174, 0.9);
   position: absolute;
   bottom: -50px;
   left: -50px;
@@ -224,12 +228,14 @@ body {
 
 .bloc-txt h2 {
   padding: 10px 30px;
-  color: #222;
-  font-family: Playfair Display, serif;
-  font-size: 40px;
   text-transform: uppercase;
   transform: translateY(100px);
-}
+
+  font-size: 6rem;
+  font-family: 'Satisfy', cursive;
+  color:rgb(213,197,174);
+  letter-spacing: 3px;
+} */
 
 .images-container {
   width: 100%;
@@ -250,10 +256,10 @@ body {
 }
 
 .flip-img1 {
-  background-image: url(ressources/image3.png);
+	background-image: url(Images/Cliffs.jpg);
 }
 .flip-img2 {
-  background-image: url(ressources/image1.jpg);
+	background-image: url(Images/PortAngeles.jpg);
 }
 
 .flip {
@@ -264,7 +270,7 @@ body {
 }
 
 .f2 {
-  background: #9b1339;
+	background-color:rgb(213,197,174, 0.95);
 }
 
 
