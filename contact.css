@@ -56,6 +56,9 @@ body {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position:top;
+    display: flex;
+    
+    align-items: center;
 }
 
 *{
@@ -65,4 +68,25 @@ body {
     max-width:100%;
   /*put a border around everything to see where it stops and starts*/
     /* border:1px solid grey; */
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+	text-align: center;
+
+    margin: 10%;
+    margin-top: 25%;
+	padding: 2% 4%;
+	border-radius:5px;
+    
+	background-color:rgb(213,197,174, .3);
+	color:rgb(213,197,174);
+	
+	letter-spacing: 3px;
+	text-transform: uppercase;
+}
+
+h1 {
+    font-size: 40px;
 }
