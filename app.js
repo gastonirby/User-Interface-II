@@ -44,3 +44,5 @@ function loader () {
         }
     })
 } 
+
+gsap.from('.card', { autoAlpha: 0, scale: 1.5, duration: 3 })

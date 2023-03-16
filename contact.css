@@ -76,7 +76,7 @@ body {
 	text-align: center;
 
     margin: 10%;
-    margin-top: 25%;
+    margin-top: 15%;
 	padding: 2% 4%;
 	border-radius:5px;
     
@@ -89,4 +89,32 @@ body {
 
 h1 {
     font-size: 40px;
+}
+
+nav {
+	display: flex;
+	align-self: flex-end;
+	background-color: none;
+	width: 16%;
+	height: auto;
+	margin: 2%;
+	position: fixed;
+}
+
+.icons {
+	justify-content: center;
+	padding: 2%;
+	background: none;
+	font-size: 70px;
+	border: none;
+	color: white;
+	cursor: pointer;
+	opacity: 0.95;
+}
+
+.icons:hover {
+	opacity: 1;
+	background-color: rgb(237, 237, 237);
+	color:rgba(220, 214, 191);
+	border-radius: 10px;
 }

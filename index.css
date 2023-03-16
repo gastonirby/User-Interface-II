@@ -114,14 +114,13 @@ nav {
 	color: white;
 	cursor: pointer;
 	opacity: 0.95;
-	
 }
+
 .icons:hover {
 	opacity: 1;
 	background-color: rgb(237, 237, 237);
 	color:rgba(220, 214, 191);
 	border-radius: 10px;
-
 }
 
 .contact:hover{
